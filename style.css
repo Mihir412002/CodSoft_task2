@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    
+}
+
+#lnav{
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a{
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      font-size: 14px;
+}
+
+#lnavr i{
+    color: rgb(243, 5, 156);
+}
+
+#left #textcenter{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+#textcenter h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#textcenter p{
+     opacity: .7;
+     font-size: 15px;
+     line-height: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: .7;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(254, 144, 0);
+}
+
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(10, 131, 237);
+}
+
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://shaadiyari.com/images/Category_Images/wedding-caterer.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image: url(https://shaadiyari.com/images/Category_Images/wedding-cards.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-color: red; */
+}
+
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://shaadiyari.com/images/Category_Images/wedding-photographer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#rbottomleft{
+    width: 55%;
+    height: 100%;
+    background-image: url(https://shaadiyari.com/images/Category_Images/wedding-decorators.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#rbottomright{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://shaadiyari.com/images/Category_Images/wedding-caterer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+    #main #right{
+        width: 100%;
+    }
+}
